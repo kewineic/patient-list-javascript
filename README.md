@@ -14,7 +14,7 @@ Lista para controle de pacientes com foco em calcular o IMC.
 - Enviar ficha do paciente para um banco de dados.
 - Adaptar para dispositivos mobile.
 
- <h2 style="color: blue;" >Stack:</h2>
+ <h2> >Stack:</h2>
 - HTML5
 - CSS3
 - JAVASCRIPT
