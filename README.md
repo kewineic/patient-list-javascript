@@ -1,4 +1,4 @@
-Resumo:
+<h2>Resumo:</h2>
 
 Lista para controle de pacientes com foco em calcular o IMC. 
 
