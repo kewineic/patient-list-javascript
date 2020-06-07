@@ -49,27 +49,26 @@ inputButtom.addEventListener("click", function(event){
     var patients = getPatientFormValue();
 
     if(validatePatientValues()){
+        removeError();
         addPatientTable(patients);
+        form.reset();
     }
 
-    form.reset();
+    
 });
 
 function validatePatientValues(){
     patient = getPatientFormValue()
 
-    patientNameValidate();
-    patientWeightValidate();
-    patientHeightValidate();
-    validPatient();
+        patientNameValidate();
+        patientWeightValidate();
+        patientHeightValidate();
+        validPatient();
 
     if(!patientIsValid.validate){
-        showErrorForm(0, patientNameIsValid);
-        showErrorForm(1, patientWeightIsValid);
-        showErrorForm(2, patientHeightIsValid);
-        
+        showErrorForm();
         return false
     }
-
+    
     return true
 }

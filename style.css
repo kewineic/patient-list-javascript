@@ -258,3 +258,12 @@ footer{
 	opacity: 0;
     transition: 0.5s;
 }
+
+.validate-output-content p{
+    font-size: 11pt;
+    font-family: 'Josefin Sans', sans-serif;
+    color: red;
+
+    padding-top: .5rem;
+}
+

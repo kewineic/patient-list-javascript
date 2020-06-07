@@ -1,20 +1,22 @@
-var patientNameIsValid = {
-    validate: true,
-    error: '',
-};
+var validateValuesList = [
+    patientNameIsValid = {
+        validate: true,
+        error: '',
+    },
 
-var patientWeightIsValid = {
-    validate: true,
-    error: '',
-};
+    patientWeightIsValid = {
+        validate: true,
+        error: '',
+    },
 
-var patientHeightIsValid = {
-    validate: true,
-    error: '',
-};
+    patientHeightIsValid = {
+        validate: true,
+        error: '',
+    },
+]
 
-var patientIsValid = {
-    validate: true
+patientIsValid = {
+    validate: true,
 };
 
 function patientNameValidate(){
@@ -74,11 +76,20 @@ function validPatient() {
     return patientIsValid.validate = true;
 };
 
-function showErrorForm(inputNum, inputNameController){
-    var divForm = document.querySelectorAll(".form-content div");
-    var errorMsg = document.createElement("p")
-    errorMsg.textContent = inputNameController.error
+var divForm = document.querySelectorAll(".validate-output-content");
 
-    divForm[inputNum].appendChild(errorMsg)
+function showErrorForm(){
+    
+    removeError();
+    for(var cont = 0; cont < divForm.length; cont++){
+        var errorMsg = document.createElement("p")
+        errorMsg.textContent = validateValuesList[cont].error
+        divForm[cont].appendChild(errorMsg)
+    }
+};
+
+function removeError(){
+    for(var cont = 0; cont < divForm.length; cont++){
+        divForm[cont].innerHTML = "";
+    }
 }
-
