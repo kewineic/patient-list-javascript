@@ -13,11 +13,14 @@ var validateValuesList = [
         validate: true,
         error: '',
     },
-]
+];
 
-patientIsValid = {
+var patientIsValid = {
     validate: true,
 };
+
+var divForm = document.querySelectorAll(".validate-output-content");
+var inputForm = document.querySelectorAll(".form-content div input");
 
 function patientNameValidate(){
     if (
@@ -76,20 +79,28 @@ function validPatient() {
     return patientIsValid.validate = true;
 };
 
-var divForm = document.querySelectorAll(".validate-output-content");
 
 function showErrorForm(){
-    
     removeError();
     for(var cont = 0; cont < divForm.length; cont++){
-        var errorMsg = document.createElement("p")
-        errorMsg.textContent = validateValuesList[cont].error
-        divForm[cont].appendChild(errorMsg)
+        var errorMsg = document.createElement("p");
+
+        errorMsg.textContent = validateValuesList[cont].error;
+        divForm[cont].appendChild(errorMsg);
+
+        if(!validateValuesList[cont].validate){
+            inputForm[cont].classList.add("validate-input-error");
+        }
     }
+        
 };
 
 function removeError(){
     for(var cont = 0; cont < divForm.length; cont++){
         divForm[cont].innerHTML = "";
     }
+
+    inputForm.forEach(
+        (input) => (input.classList.remove("validate-input-error"))
+    );
 }

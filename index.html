@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="mobile.css">
+    <title>Lista de Pacientes </title>
 </head>
 <body>
 
@@ -21,6 +22,13 @@
             </ul>
         </nav>
     </header>
+
+    <input type="checkbox" name="" id="toggle-check">
+   <label for="toggle-check">
+        <div class="menu-mobile">
+            <span class="toggle"></span>
+        </div>
+   </label>
 
     <main>
         <section class="patient-form-content">
@@ -60,7 +68,7 @@
             <h2>Adicionar novo paciente</h2>
 
             <form class="form-content">
-               <div class>
+               <div class="input-content-addForm-name">
                     <label for="patient-name">Nome:</label>
                     <input type="text" name="patient-name" id="name" class="input-addForm-name">
 
@@ -80,18 +88,19 @@
 
                     <div class="validate-output-content"></div>
                 </div>
-
+                
                 <input type="submit" value="Adcionar" class="input-form">
             </form>
         </section>
     </main>
 
     <footer>
-        &copy; Kewin Costa
+        <p><a href="https://github.com/kewineic" target="_blank" rel="noopener noreferrer">&copy; Kewin Costa</a></p>
     </footer>
 
     <script src="./calculate_imc.js"></script>
     <script src="./remove_tr.js"></script>
+    <script src="./toggle_menu.js"></script>
     <script src="./filter.js"></script>
     <script src="./get_patients.js"></script>
     <script src="./controllers.js"></script>

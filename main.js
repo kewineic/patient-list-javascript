@@ -72,3 +72,5 @@ function validatePatientValues(){
     
     return true
 }
+
+

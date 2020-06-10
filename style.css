@@ -1,261 +1,276 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Titillium+Web:wght@300;400;600&display=swap');
+@media only screen and (min-width: 960px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Titillium+Web:wght@300;400;600&display=swap');
 
 /*
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 */
+    .header-content{
+        width: auto;
+        background: #240034; 
 
-.header-content{
-    width: auto;
-    background: #240034; 
+        display: flex;
+        flex-direction: column;
+    }
 
-    display: flex;
-    flex-direction: column;
-}
+    .header-content h1{
+        font-family: 'Josefin Sans', sans-serif;
+        padding: .5rem;
 
-.header-content h1{
-    font-family: 'Josefin Sans', sans-serif;
-    padding: .5rem;
+        border-bottom: 1px solid white;
+    } 
 
-    border-bottom: 1px solid white;
-} 
+    .header-content h1 a {
+        color: white;
+        font-size: 2rem;
 
-.header-content h1 a {
-    color: white;
-    font-size: 2rem;
+        text-decoration: none;
+    }
 
-    text-decoration: none;
-}
+    .menu-content{
+        background: #450064;
+        width: auto;
+    }
 
-.menu-content{
-    background: #450064;
-    width: auto;
-}
+    .menu-content ul{
+        display: flex;
+        justify-content: center;
+    }
 
-.menu-content ul{
-    display: flex;
-    justify-content: center;
-}
+    .menu-content ul li{
+        display: inline-block;
+        width: 6rem;
+    }
 
-.menu-content ul li{
-    display: inline-block;
-    width: 6rem;
-}
+    .menu-content ul li a{
+        font-size: 1rem;
+        color: white;
+        font-family: 'Titillium Web', sans-serif;
+        text-decoration: none;
 
-.menu-content ul li a{
-    font-size: 1rem;
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    text-decoration: none;
+        margin-left: .5rem;
+    }
 
-    margin-left: .5rem;
-}
+    .menu-content ul li a:hover{
+        text-shadow: 0 0 3px white;
+    }
 
-.menu-content ul li a:hover{
-    text-shadow: 0 0 3px white;
-}
+    main {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-main {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        font-family: 'Josefin Sans', sans-serif;
 
-    font-family: 'Josefin Sans', sans-serif;
-}
+        margin-bottom: 41px;
+    }
 
-.patient-form-content{
-    width: 940px;
-}
+    .patient-form-content{
+        width: 940px;
+    }
 
-.patient-form-content h2{
-    font-size: 2.5rem;
-    border-bottom: 1px solid black;
-    padding: .5rem;
-}
+    .patient-form-content h2{
+        font-size: 2.5rem;
+        border-bottom: 1px solid black;
+        padding: .5rem;
+    }
 
-.patient-form-content label{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    display: block;
+    .patient-form-content label{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+        display: block;
 
-    margin: .5rem 0 0 auto;
-}
+        margin: .5rem 0 0 auto;
+    }
 
-.search-plus-button-content{
-    width: auto;
+    .search-plus-button-content{
+        width: auto;
 
-    display: flex;
+        display: flex;
+        
+        justify-content: space-between;
+    }
+
+    .input-search{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: .9rem;
+        font-weight: 400;
+
+        border: 1px solid black;
+        width: 12rem;
+        height: 2rem;
+        margin: 0 0 .5rem 0;
+
+        text-indent: .2rem;
+
+        outline-style: none;
+
+        
+        -webkit-border-top-right-radius: 100px;
+        -webkit-border-bottom-right-radius: 100px;
+        -moz-border-radius-topright: 100px;
+        -moz-border-radius-bottomright: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
+    .newList-button{
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: white;
     
-    justify-content: space-between;
-}
+        width: 10rem;
+        height: 2rem;
 
-.input-search{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: .9rem;
-    font-weight: 400;
+        background: #450064;
 
-    border: 1px solid black;
-    width: 12rem;
-    height: 2rem;
-    margin: 0 0 .5rem 0;
+        outline-style: none;
 
-    text-indent: .2rem;
+    }
 
-    outline-style: none;
+    .newList-button:hover{
+        transform: scale(1.1);
+        transition: .5s;
+        cursor: pointer;
+    }
 
+    .patient-form-content table{
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .patient-form-content table th,td{
+        border: 1px solid black;
+        padding: .5rem 5.6rem .5rem 5.6rem;
+        text-align: center;
+    }
+
+    .patient-form-content table th{
+        color: white;
+        background: #56495c;
+    }
+
+    .patient-addForm-content{
+        width: 940px;
+        
+    }
+
+    .patient-addForm-content h2{
+        font-size: 2.5rem;
+        border-bottom: 1px solid black;
+        padding: 2rem 0 .5rem 0;
+    }
+
+    .form-content{
+        margin: 1rem 0 0 0;
+    }
+
+    .input-addForm-name{
+        border: 1px solid black;
+
+        outline-style: none;
+
+        font-family: "Titillium Web", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        width: 100%;
+        height: 2rem;
+        text-indent: 0.2rem;
+
+        display: block;
+    }
+
+    .input-content-addForm{ 
+        display: inline-block;
+    }
+
+    .input-content-addForm label{
+        display: block;
+
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+        display: block;
+        margin: .5rem 0 0 auto;
+    }
+
+    .input-addForm{
+        border: 1px solid black;
+
+        outline-style: none;
+
+        font-family: "Titillium Web", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        width: 29.09rem;
+        height: 2rem;
+        text-indent: 0.2rem;
+    }
+
+    .input-form{
+        display: block;
+
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: white;
     
-    -webkit-border-top-right-radius: 100px;
-    -webkit-border-bottom-right-radius: 100px;
-    -moz-border-radius-topright: 100px;
-    -moz-border-radius-bottomright: 100px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-}
+        width: 10rem;
+        height: 2rem;
 
-.newList-button{
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: white;
-   
-    width: 10rem;
-    height: 2rem;
+        background: #450064;
 
-    background: #450064;
+        outline-style: none;
 
-    outline-style: none;
 
-}
+        margin: 1rem 0 1rem auto;
+        
+    }
 
-.newList-button:hover{
-    transform: scale(1.1);
-    transition: .5s;
-    cursor: pointer;
-}
+    .input-form:hover{
+        transform: scale(1.1);
+        transition: .5s;
+        cursor: pointer;
+    }
 
-.patient-form-content table{
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+    footer{
+        
+        width: 100vw;
+        height: 40px;
+        background: #450064;
 
-.patient-form-content table th,td{
-    border: 1px solid black;
-    padding: .5rem 5.6rem .5rem 5.6rem;
-    text-align: center;
-}
+        display: block;
+        text-align: center;
+        
+        position: fixed;
+        bottom: 0;
+    }
 
-.patient-form-content table th{
-    color: white;
-    background: #56495c;
-}
-
-.patient-addForm-content{
-    width: 940px;
+    footer p{
+        display: block;
+        padding: 10px;
+    }
     
+    footer p a{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
 }
 
-.patient-addForm-content h2{
-    font-size: 2.5rem;
-    border-bottom: 1px solid black;
-    padding: 2rem 0 .5rem 0;
-}
-
-.form-content{
-    margin: 1rem 0 0 0;
-}
-
-.input-addForm-name{
-    border: 1px solid black;
-
-    outline-style: none;
-
-    font-family: "Titillium Web", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    width: 100%;
-    height: 2rem;
-    text-indent: 0.2rem;
-
-    display: block;
-}
-
-.input-content-addForm{ 
-    display: inline-block;
-}
-
-.input-content-addForm label{
-    display: block;
-
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    display: block;
-    margin: .5rem 0 0 auto;
-}
-
-.input-addForm{
-    border: 1px solid black;
-
-    outline-style: none;
-
-    font-family: "Titillium Web", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    width: 29.09rem;
-    height: 2rem;
-    text-indent: 0.2rem;
-}
-
-.input-form{
-    display: block;
-
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: white;
-   
-    width: 10rem;
-    height: 2rem;
-
-    background: #450064;
-
-    outline-style: none;
-
-
-    margin: 1rem 0 1rem auto;
-    
-}
-
-.input-form:hover{
-    transform: scale(1.1);
-    transition: .5s;
-    cursor: pointer;
-}
-
-footer{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    color: white;
-    
-    height: 40px;
-    background: #450064;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* for javascript functions */
-.hidden{
+  /* for javascript functions */
+  .hidden{
     display: none;
 }
 
 .fadeOut {
-	opacity: 0;
+    opacity: 0;
     transition: 0.5s;
 }
 
@@ -267,3 +282,6 @@ footer{
     padding-top: .5rem;
 }
 
+.validate-input-error{
+    border: 1px solid red;
+}
