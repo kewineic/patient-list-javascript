@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-	border: 0;
-	vertical-align: baseline;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 body {
     font-family: "Open Sans", sans-serif;

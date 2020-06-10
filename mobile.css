@@ -1,0 +1,404 @@
+@media only screen and (max-width: 959px){
+    *{
+        box-sizing: border-box
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Titillium+Web:wght@300;400;600&display=swap');
+
+    /*
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    */
+
+    .header-content {
+        background-color: #240034;
+        position: fixed;
+
+        width: 100vw;
+
+        font-family: 'Josefin Sans', sans-serif;
+        padding: .5rem;
+
+        border-bottom: 1px solid white;
+    }
+
+    .header-content h1 a{
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .menu-content{
+        position: fixed;
+        background: #240034;
+        height: 100%;
+        width: 70%;
+        top: 52px;
+        bottom: 0;
+        right: 0;
+
+        opacity: 0;
+        display: block;
+        visibility: hidden;
+        
+        transition: .25s ease-in-out;
+    
+    }
+
+    .menu-content ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-content ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-content ul li a{
+        color: white;
+        font-size: 5vw;
+        font-family: 'Titillium Web', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    .menu-mobile{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #240034;
+
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+
+        box-shadow: 0 0 0 0 rgb(36, 0, 52);
+    }
+    
+    .menu-mobile:hover{
+        cursor: pointer;
+        box-shadow: 0 0 0 8px rgb(36, 0, 52), 0 0 0 8px rgb(36, 0, 52);
+        transition: .25s ease-in-out;
+    }
+
+    #toggle-check:checked ~ label .menu-mobile{
+        box-shadow: 0 0 0 15vw rgb(36, 0, 52), 0 0 0 15vh rgb(36, 0, 52);
+
+        transition: .4s ease-in-out;
+    }
+
+    .toggle{
+        position: relative;
+        display: block;
+        background: white;
+
+        width: 30px;
+        height: 3px;
+
+        top: 28px;
+        left: 15px;
+
+        transition: .4s ease-in-out;
+    }
+
+    .toggle:before, 
+    .toggle:after{
+        background: white;
+        content: "";
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        transition: .5s ease-in-out;
+    }
+
+    .toggle:before{
+        position: absolute;
+        top: 10px;
+    }
+    .toggle:after{
+        position: absolute;
+        top: -10px;
+    }
+
+    #toggle-check:checked ~ label .toggle{
+        transform: rotate(45deg);
+    }
+
+    #toggle-check:checked ~ label .toggle:before,
+    #toggle-check:checked ~ label .toggle:after{
+        transform: rotate(90deg);
+        top: 0;
+    }
+
+    main{
+        padding-top: 53px;
+        width: 100vw;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .patient-form-content{
+        width: 100%;
+
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .patient-form-content h2{
+        text-indent: .5rem;
+        font-weight: bold;
+        font-size: 5vw;
+
+        align-self: center;
+        display: block;
+        width: 95%;
+        border-bottom: 1px solid ;
+
+
+   
+        padding: .5vw;
+    }
+    
+    .patient-form-content label{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.05rem;
+        font-weight: 400;
+
+        display: block;
+        width: 95%;
+    
+        margin-top: .5rem;
+        
+        align-self: center;
+    }
+
+    .search-plus-button-content{
+        width: 95%;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-search{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: .7rem;
+        font-weight: 400;
+
+        border: 1px solid black;
+        
+        width: 190px;
+        height: 40px;
+        margin: 0 0 .5rem 0;
+
+        text-indent: .5rem;
+        
+        -webkit-border-top-right-radius: 100px;
+        -webkit-border-bottom-right-radius: 100px;
+        -moz-border-radius-topright: 100px;
+        -moz-border-radius-bottomright: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
+    .newList-button{
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color: white;
+    
+        width: 140px;
+        height: 40px;
+
+        background: #450064;
+        
+        text-align: center;
+
+    }
+
+    .newList-button:hover{
+        transform: scale(1.1);
+        transition: .5s;
+        cursor: pointer;
+
+    }
+
+    .patient-form-content table{
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        width: 95%;
+
+        align-self: center;
+
+        margin-top: 1.2rem;
+
+    }
+
+    .patient-form-content table th,td{
+        border: 1px solid black;
+        padding: .3rem 0;
+        text-align: center;
+    }
+
+    .patient-form-content table th{
+        color: white;
+        background: #56495c;
+    }
+
+    .patient-addForm-content{
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .patient-addForm-content h2{
+        text-indent: .5rem;
+        font-weight: bold;
+        font-size: 5vw;
+
+        align-self: center;
+        display: block;
+        width: 95%;
+        border-bottom: 1px solid ;
+   
+        padding: .5vw;
+
+        margin-top: 2.4rem;
+    }
+
+    .form-content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-content-addForm-name,
+    .input-content-addForm
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .input-content-addForm-name label,
+    .input-content-addForm label{
+        display: block;
+
+        width: 100%;
+
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.05rem;
+        font-weight: 400;
+
+        display: block;
+        width: 95%;
+    
+        margin-top: .5rem;
+        
+    }
+
+    .input-addForm-name,
+    .input-addForm{
+        border: 1px solid black;
+
+        outline-style: none;
+
+        font-family: "Titillium Web", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        height: 2rem;
+        text-indent: 0.2rem;
+
+        margin-top: .3rem;
+        margin-bottom: .6rem;
+    }
+
+    .input-addForm{
+        width: 25%;
+    }
+    
+    .validate-output-content p{
+        font-size: 11pt;
+        font-family: 'Josefin Sans', sans-serif;
+        color: red;
+        margin-top: -.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .validate-input-error{
+        border: 1px solid red;
+    }
+
+    .input-form{
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color: white;
+    
+        width: 160px;
+        height: 40px;
+
+        background: #450064;
+        
+        text-align: center;
+
+        align-self: center;
+
+        margin-top: 1.2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .input-form:hover{
+        transform: scale(1.1);
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    footer{
+        width: 100vw;
+        height: 1.2rem;
+        display: block;
+
+        text-align: center;
+      
+        position: fixed;
+
+        bottom: 0;
+
+        background: #240034;
+    
+    }
+
+    footer a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+    }
+}
+
+#toggle-check{
+    display: none;
+}
+
+/* Javascript functions */
+.menu-content-hidden{
+    opacity: 1;
+
+    visibility: visible;
+
+}
