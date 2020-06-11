@@ -12,7 +12,7 @@ Lista para controle de pacientes com foco em calcular o IMC.
 <h2>Próximas implementações:</h2>
 
 - Enviar ficha do paciente para um banco de dados.
-- Adaptar para dispositivos mobile.
+- Adaptar para dispositivos mobile. &#9989;
 
  <h2> >Stack:</h2>
 - HTML5
