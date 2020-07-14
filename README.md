@@ -2,7 +2,7 @@
 
 Lista para controle de pacientes com foco em calcular o IMC. 
 
-## Funcionalidades:
+### Funcionalidades:
 
 - Filtrar tabela por nome;
 - Consumir API, de forma assincrona, para busca de pacientes e visualizar em tela;
